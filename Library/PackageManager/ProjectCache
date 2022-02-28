@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637801845057159625
-    m_Hash: 4022173431
+      ticks: 637816719533830939
+    m_Hash: 2319381248
   m_LockFileStatus:
     m_FilePath: F:/#projects/Unity/Flurry_of_Instict/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637801845340480108
-    m_Hash: 2936573561
+      ticks: 637816719533840707
+    m_Hash: 3531928421
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -4004,6 +4004,7 @@ m_PackageAssets:
         - 5.0.9
         - 5.0.10
         - 5.1.0
+        - 5.1.1
         - 6.0.0-pre.1
         - 6.0.0-pre.2
         - 6.0.1
@@ -4022,7 +4023,8 @@ m_PackageAssets:
         - 8.0.0
         compatible:
         - 5.1.0
-        verified: 5.1.0
+        - 5.1.1
+        verified: 5.1.1
       dependencies:
       - name: com.unity.2d.common
         version: 4.1.0
