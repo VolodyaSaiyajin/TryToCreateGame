@@ -27,10 +27,6 @@ public class PlayerAttack : MonoBehaviour
     RaycastHit2D _hitTargetRight;
 
 
-    private void Start()
-    {
-    }
-
     private void Update()
     {
         ÑheckDistance();

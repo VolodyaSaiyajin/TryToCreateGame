@@ -4,16 +4,25 @@ using UnityEngine;
 
 public class BanditEnemy : MonoBehaviour, IEnemy1Level
 {
+   [SerializeField] private Player _player;
+
     public int Health { get; private set; }
     public int Damage { get; }
 
     private float _maxDistanceToAttack = 4;
     private bool _canSee;
     private RaycastHit2D _hit;
+
+    float _angle;
     public BanditEnemy()
     {
         Damage = 30;
         Health = 100;
+    }
+
+    private void Update()
+    {
+        FindAngle();
     }
 
     public void ApplyDamage(int damage)
@@ -28,6 +37,8 @@ public class BanditEnemy : MonoBehaviour, IEnemy1Level
         }
     }
 
+   
+
 
     private void CheckDistanceBetweenCharacter()
     {
@@ -39,6 +50,16 @@ public class BanditEnemy : MonoBehaviour, IEnemy1Level
     public void Attack()
     {
         throw new System.NotImplementedException();
+    }
+
+
+    private void FindAngle()
+    {
+    
+        Vector2 targetDir = transform.position - _player.transform.position;
+
+        _angle = Vector2.Angle(transform.position, targetDir);
+
     }
 
     private void OnDrawGizmos()

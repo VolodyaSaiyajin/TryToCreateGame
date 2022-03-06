@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class SchoolGuyStateMachine : MonoBehaviour
 {
-    [SerializeField] private List<Transitions> gameObjects;
+    [SerializeField] private List<Transitions> _list;
 
     public void DoIdle()
+    {
+        
+    }
+
+    public void DoAttack()
     {
 
     }
 
-    public void DoAttack()
+    public void DoRunning()
     {
 
     }

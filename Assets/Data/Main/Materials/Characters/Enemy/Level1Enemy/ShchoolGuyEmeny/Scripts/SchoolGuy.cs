@@ -12,6 +12,8 @@ public class SchoolGuy : MonoBehaviour, IBandit
 
     private Player _player;
 
+    private Transform _eyePosition;
+
     public int Health { get; private set; }
 
     public int Damage { get; }
@@ -33,6 +35,7 @@ public class SchoolGuy : MonoBehaviour, IBandit
     {
         CheckRange();
     }
+
 
     private void CheckRange()
     {

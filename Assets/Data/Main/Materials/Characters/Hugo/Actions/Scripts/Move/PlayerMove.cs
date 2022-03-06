@@ -12,30 +12,33 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private Rigidbody2D _rb2d;
     [SerializeField] private ContactFilter2D _contactFilter;
 
-    private Vector2 _moveDir;
+    private Vector2 _targetVelocity;
     private Vector2 _jumpDir;
+   [SerializeField] private float _gravityModifier;
+    private Vector2 _velocity;
 
-    public Vector2 MoveDir => _moveDir;
+    public Vector2 MoveDir => _targetVelocity;
 
-    private RaycastHit2D[] _groundHits = new RaycastHit2D[1];
+    private readonly RaycastHit2D[] _groundHits = new RaycastHit2D[1];
     private bool _isGround;
 
 
     private void FixedUpdate()
     {
+        
         Move();
         GroundCheck();
     }
 
     public void SetMoveDirection(Vector2 moveDir)
     {
-        _moveDir = moveDir;
+        _velocity = moveDir;
     }
 
     public void SetJumpDir(float jumpDir)
     {
-
-        _jumpDir.y = jumpDir;
+        _velocity.y = jumpDir;
+        Debug.Log(jumpDir);
     }
 
     private void GroundCheck()
@@ -51,14 +54,30 @@ public class PlayerMove : MonoBehaviour
             _isGround = false;
         }
 
-        if (_jumpDir.y != 0)
-        {
-            if (_isGround == true)
-            {
-                Jump(_jumpDir);
-            }
-        }
+        
+
     }
+
+   
+    private void Move()
+    {
+        _velocity += _gravityModifier * Time.deltaTime * Physics2D.gravity;
+
+        _targetVelocity = _velocity;
+
+        if (_isGround == true && _velocity.y == 1)
+        {
+            Jump(_velocity);
+        }
+
+        _rb2d.position += new Vector2(_targetVelocity.x * _moveSpeed, _rb2d.velocity.y) * Time.deltaTime;
+    }
+
+    private void Jump(Vector2 jumpDir)
+    {
+        _rb2d.velocity = new Vector2(_targetVelocity.x * _moveSpeed, _rb2d.velocity.y * jumpDir.y);
+    }
+
 
     private void OnDrawGizmos()
     {
@@ -73,13 +92,4 @@ public class PlayerMove : MonoBehaviour
         Gizmos.DrawLine(transform.position, new Vector2(transform.position.x, transform.position.y - _groundCheckLineSize));
     }
 
-    private void Move()
-    {
-        _rb2d.velocity = new Vector3(_moveDir.x * _moveSpeed, _rb2d.velocity.y, transform.position.z);
-    }
-
-    private void Jump(Vector2 jumpDir)
-    {
-        _rb2d.AddForce(jumpDir * _jumpSpeed, ForceMode2D.Impulse);
-    }
 }

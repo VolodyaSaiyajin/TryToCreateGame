@@ -3425,11 +3425,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4082888450349476438, guid: f9e8af3be61ba2f4ba06456f8a601b86, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.595
+      value: -1.498
       objectReference: {fileID: 0}
     - target: {fileID: 4082888450349476438, guid: f9e8af3be61ba2f4ba06456f8a601b86, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.202
+      value: 1.005
       objectReference: {fileID: 0}
     - target: {fileID: 4082888450349476438, guid: f9e8af3be61ba2f4ba06456f8a601b86, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3467,6 +3467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BanditBoss
       objectReference: {fileID: 0}
+    - target: {fileID: 4082888450349476442, guid: f9e8af3be61ba2f4ba06456f8a601b86, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1717840136}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8af3be61ba2f4ba06456f8a601b86, type: 3}
 --- !u!1001 &6489423179290710817
@@ -3486,11 +3490,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6489423179599818226, guid: bec3889ea0b04de41955f2ae97a66bda, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.89
+      value: 5.55
       objectReference: {fileID: 0}
     - target: {fileID: 6489423179599818226, guid: bec3889ea0b04de41955f2ae97a66bda, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.2
+      value: 2.03
       objectReference: {fileID: 0}
     - target: {fileID: 6489423179599818226, guid: bec3889ea0b04de41955f2ae97a66bda, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3524,6 +3528,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6489423179599818227, guid: bec3889ea0b04de41955f2ae97a66bda, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bec3889ea0b04de41955f2ae97a66bda, type: 3}
 --- !u!1001 &8715918510382997690
@@ -3543,7 +3551,7 @@ PrefabInstance:
       objectReference: {fileID: 1983116520}
     - target: {fileID: 1357539704, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
       propertyPath: _attackDelay
-      value: 0.4
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 1357539704, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
       propertyPath: _banditEnemy
@@ -3555,7 +3563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1357539709, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
       propertyPath: m_GravityScale
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1390363848686381493, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
       propertyPath: m_RootOrder
@@ -3600,6 +3608,26 @@ PrefabInstance:
     - target: {fileID: 1390363848686381493, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330170434634591068, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330170434634591068, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
+      propertyPath: _jumpSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330170434634591068, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
+      propertyPath: _velocity.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330170434634591068, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
+      propertyPath: _gravityModifier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330170434634591068, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
+      propertyPath: _layerMask.m_Bits
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7637528790393893176, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
       propertyPath: m_Name

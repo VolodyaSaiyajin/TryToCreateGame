@@ -22,13 +22,6 @@ public class Enemy1Level : MonoBehaviour, IEnemy1Level
         Damage = 10;
     }
 
-    
-
-    private void Start()
-    {
-        _player = GetComponent<Player>(); 
-    }
-
 
     private void Update()
     {
