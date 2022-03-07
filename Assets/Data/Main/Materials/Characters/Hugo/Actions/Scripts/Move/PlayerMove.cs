@@ -11,12 +11,14 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float _groundCheckLineSize;
     [SerializeField] private Rigidbody2D _rb2d;
     [SerializeField] private ContactFilter2D _contactFilter;
+    [SerializeField] private float _gravityModifier;
 
     private Vector2 _targetVelocity;
     private Vector2 _jumpDir;
-   [SerializeField] private float _gravityModifier;
-    private Vector2 _velocity;
+    private Vector2 _groundNormal;
 
+    private Vector2 _velocity;
+    
     public Vector2 MoveDir => _targetVelocity;
 
     private readonly RaycastHit2D[] _groundHits = new RaycastHit2D[1];
@@ -35,11 +37,7 @@ public class PlayerMove : MonoBehaviour
         _velocity = moveDir;
     }
 
-    public void SetJumpDir(float jumpDir)
-    {
-        _velocity.y = jumpDir;
-        Debug.Log(jumpDir);
-    }
+    
 
     private void GroundCheck()
     {
@@ -53,9 +51,6 @@ public class PlayerMove : MonoBehaviour
         {
             _isGround = false;
         }
-
-        
-
     }
 
    
@@ -70,17 +65,34 @@ public class PlayerMove : MonoBehaviour
             Jump(_velocity);
         }
 
+        Vector2 moveAlongGround = new Vector2(_groundNormal.y, -_groundNormal.x);
+
+        CountDistance(_velocity, false);
+
+
+        CountDistance(_velocity, true);
+
         _rb2d.position += new Vector2(_targetVelocity.x * _moveSpeed, _rb2d.velocity.y) * Time.deltaTime;
+    }
+
+    private void CountDistance(Vector2 move, bool isJump)
+    {
+        float distance = move.magnitude;
+        Debug.Log(distance);
     }
 
     private void Jump(Vector2 jumpDir)
     {
-        _rb2d.velocity = new Vector2(_targetVelocity.x * _moveSpeed, _rb2d.velocity.y * jumpDir.y);
+        _rb2d.velocity = jumpDir;
     }
 
 
     private void OnDrawGizmos()
     {
+       
+
+        
+
         if (_isGround == true)
         {
             Gizmos.color = Color.green;
@@ -90,6 +102,8 @@ public class PlayerMove : MonoBehaviour
             Gizmos.color = Color.red;
         }
         Gizmos.DrawLine(transform.position, new Vector2(transform.position.x, transform.position.y - _groundCheckLineSize));
+        Vector2 moveAlongGround = new Vector2(_groundNormal.y, -_groundNormal.x);
+        Gizmos.DrawLine(transform.position, moveAlongGround);
     }
 
 }

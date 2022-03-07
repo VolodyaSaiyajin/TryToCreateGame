@@ -461,7 +461,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.8455806
+  orthographic size: 6.87
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -987,6 +987,8 @@ GameObject:
   - component: {fileID: 1419121218}
   - component: {fileID: 1419121217}
   - component: {fileID: 1419121216}
+  - component: {fileID: 1419121220}
+  - component: {fileID: 1419121219}
   m_Layer: 3
   m_Name: Road
   m_TagString: Untagged
@@ -1020,7 +1022,7 @@ TilemapCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
@@ -3264,6 +3266,79 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!66 &1419121219
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419121214}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1419121216}
+    m_ColliderPaths:
+    - - X: -80000020
+        Y: 20000100
+      - X: -150000041
+        Y: 20000100
+      - X: -150000100
+        Y: 20000041
+      - X: -150000100
+        Y: -30000041
+      - X: -150000041
+        Y: -30000100
+      - X: 280000041
+        Y: -30000100
+      - X: 280000100
+        Y: -30000041
+      - X: 280000100
+        Y: 41
+      - X: 280000041
+        Y: 100
+      - X: -59999959
+        Y: 100
+      - X: -79999977
+        Y: 20000118
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 27.999975, y: -3.00001}
+      - {x: 27.999975, y: 0.00001}
+      - {x: -6.0000033, y: 0.0000175}
+      - {x: -8.000013, y: 2.00001}
+      - {x: -15.00001, y: 1.9999748}
+      - {x: -14.999974, y: -3.00001}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+--- !u!50 &1419121220
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419121214}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1544876746
 GameObject:
   m_ObjectHideFlags: 0
@@ -3384,11 +3459,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7637528790393893176, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
   m_PrefabInstance: {fileID: 8715918510382997690}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1717840136
+--- !u!114 &1717840128
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717840127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e2f80ad9551e041aa7a4caea949be1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minGroundNormalY: 0.65
+  gravityModifier: 1
+  _jumpTakeOffSpeed: 5
+  _maxSpeed: 5
+--- !u!114 &1717840133 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 954097403023047146, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
+  m_PrefabInstance: {fileID: 8715918510382997690}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717840127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015a1195dc3e03e4d9cff766659452dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1717840136 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1717840136, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
+  m_PrefabInstance: {fileID: 8715918510382997690}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717840127}
   m_Enabled: 1
@@ -3407,11 +3508,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c95af1c2a55cd4141afda8a39875e958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1983116520 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5276308039445635642, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
-  m_PrefabInstance: {fileID: 8715918510382997690}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4082888449671125905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3546,24 +3642,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 519420031}
     - target: {fileID: 1357539704, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
-      propertyPath: _handPoint
-      value: 
-      objectReference: {fileID: 1983116520}
-    - target: {fileID: 1357539704, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
-      propertyPath: _attackDelay
-      value: 0.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 1357539704, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
       propertyPath: _banditEnemy
       value: 
       objectReference: {fileID: 1754362315}
-    - target: {fileID: 1357539704, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
-      propertyPath: _layerMask.m_Bits
-      value: 64
+    - target: {fileID: 954097403023047146, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
+      propertyPath: _verticalSpeed
+      value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 1357539709, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
-      propertyPath: m_GravityScale
-      value: 0
+    - target: {fileID: 954097403023047146, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
+      propertyPath: gravityModifier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 954097403023047146, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
+      propertyPath: _minGroundNormalY
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1390363848686381493, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
       propertyPath: m_RootOrder
@@ -3571,11 +3663,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1390363848686381493, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.93
+      value: -5.38
       objectReference: {fileID: 0}
     - target: {fileID: 1390363848686381493, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.05
+      value: 3.64
       objectReference: {fileID: 0}
     - target: {fileID: 1390363848686381493, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3609,26 +3701,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3330170434634591068, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
-      propertyPath: m_Enabled
-      value: 1
+    - target: {fileID: 3393451905580825960, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
+      propertyPath: _playerMove
+      value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3330170434634591068, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
-      propertyPath: _jumpSpeed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3330170434634591068, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
-      propertyPath: _velocity.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3330170434634591068, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
-      propertyPath: _gravityModifier
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3330170434634591068, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
-      propertyPath: _layerMask.m_Bits
-      value: 8
-      objectReference: {fileID: 0}
+    - target: {fileID: 3393451905580825960, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
+      propertyPath: _playerPhysicsMove
+      value: 
+      objectReference: {fileID: 1717840133}
     - target: {fileID: 7637528790393893176, guid: de7748fd89fa843468d399acf1ff646f, type: 3}
       propertyPath: m_Name
       value: Hugo

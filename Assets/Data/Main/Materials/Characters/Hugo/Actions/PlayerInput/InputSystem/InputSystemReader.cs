@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class InputSystemReader : MonoBehaviour
 {
-    [SerializeField] private PlayerMove _playerMove;
+    [SerializeField] private PlayerMoveController _plyaerMoveContoller;
     [SerializeField] private PlayerAttack _playerAttack;
 
     private InputSystem _inputActions;
@@ -17,7 +17,6 @@ public class InputSystemReader : MonoBehaviour
 
     private void Awake()
     {
-
         _inputActions = new InputSystem();
         _inputActions.Player.Move.performed += OnHorizontalMovement;
         _inputActions.Player.Move.canceled += OnHorizontalMovement;
@@ -48,13 +47,12 @@ public class InputSystemReader : MonoBehaviour
     public void OnHorizontalMovement(InputAction.CallbackContext context)
     {
         _buttonMoveValue = context.ReadValue<Vector2>();
-        _playerMove.SetMoveDirection(_buttonMoveValue);
+        _plyaerMoveContoller.SetMoveDirection(_buttonMoveValue);
     }
-
 
     public void OnJump(InputAction.CallbackContext context)
     {
        float dirY = context.ReadValue<float>();
-        _playerMove.SetJumpDir(dirY);
+        _plyaerMoveContoller.SetJumpDir(dirY);
     }
 }

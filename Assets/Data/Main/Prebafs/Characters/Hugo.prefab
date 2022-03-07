@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1390363848686381493}
   - component: {fileID: 5412026927548809083}
   - component: {fileID: 1357539704}
-  - component: {fileID: 3330170434634591068}
   - component: {fileID: 1357539703}
+  - component: {fileID: 954097403023047146}
   - component: {fileID: 5504815340697395930}
   - component: {fileID: 7522772721295566206}
   - component: {fileID: 1815866110476119830}
@@ -106,53 +106,12 @@ MonoBehaviour:
   _banditEnemy: {fileID: 0}
   _damage: 10
   _maxDistanceToAttack: 1.2
-  _contactsEnemy:
-    useTriggers: 0
-    useLayerMask: 1
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 64
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
-  _attackDelay: 0.2
-  _handPoint: {fileID: 1390363848686381493}
+  _attackDelay: 0.45
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  _handPoint: {fileID: 5276308039445635642}
   _heightHand: 1.28
---- !u!114 &3330170434634591068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7637528790393893176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9047806ef544ab441827b2f884caeb1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _moveSpeed: 6
-  _jumpSpeed: 8
-  _groundCheckLineSize: 0.1
-  _rb2d: {fileID: 1357539709}
-  _contactFilter:
-    useTriggers: 0
-    useLayerMask: 1
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 8
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
 --- !u!114 &1357539703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,6 +190,20 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &954097403023047146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7637528790393893176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015a1195dc3e03e4d9cff766659452dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minGroundNormalY: 0.65
+  gravityModifier: 1
 --- !u!95 &5504815340697395930
 Animator:
   serializedVersion: 3
@@ -291,7 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b183d99331fc8449ae15b10c8679ae0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerMove: {fileID: 3330170434634591068}
+  _plyaerMoveContoller: {fileID: 0}
   _playerAttack: {fileID: 1357539704}
 --- !u!50 &1357539709
 Rigidbody2D:
@@ -301,14 +274,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7637528790393893176}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
