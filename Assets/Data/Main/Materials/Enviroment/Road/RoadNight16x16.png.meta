@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9964aa5dcbc895349a885a06a908b8e2
+guid: 06017de6cff0e2f43b75d89ace9dd2a4
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -203,6 +203,147 @@ TextureImporter:
   - first:
       213: 5229751326342290789
     second: RoadNight16x16_66
+  - first:
+      213: -6733745151332453802
+    second: RoadNight16x16_67
+  - first:
+      213: 7355559340976896747
+    second: RoadNight16x16_68
+  - first:
+      213: -7804942069099821508
+    second: RoadNight16x16_69
+  - first:
+      213: 5927696350755687796
+    second: RoadNight16x16_70
+  - first:
+      213: 7286075902216906835
+    second: RoadNight16x16_71
+  - first:
+      213: 7221571616297978061
+    second: RoadNight16x16_72
+  - first:
+      213: -1662976873716156895
+    second: RoadNight16x16_73
+  - first:
+      213: -5406608293488160204
+    second: RoadNight16x16_74
+  - first:
+      213: -375136895319406913
+    second: RoadNight16x16_75
+  - first:
+      213: 6415793537428768022
+    second: RoadNight16x16_76
+  - first:
+      213: -423388121976605227
+    second: RoadNight16x16_77
+  - first:
+      213: 2473482480924608862
+    second: RoadNight16x16_78
+  - first:
+      213: 1801258468173008343
+    second: RoadNight16x16_79
+  - first:
+      213: 3519024854079401676
+    second: RoadNight16x16_80
+  - first:
+      213: 8104240079174743468
+    second: RoadNight16x16_81
+  - first:
+      213: 4827348388565916522
+    second: RoadNight16x16_82
+  - first:
+      213: -3861284272224205840
+    second: RoadNight16x16_83
+  - first:
+      213: -6923079251722659649
+    second: RoadNight16x16_84
+  - first:
+      213: 1697942860498277722
+    second: RoadNight16x16_85
+  - first:
+      213: 1412098758759138508
+    second: RoadNight16x16_86
+  - first:
+      213: 2901124694657108070
+    second: RoadNight16x16_87
+  - first:
+      213: -3021266069795193829
+    second: RoadNight16x16_88
+  - first:
+      213: 8576384725909509330
+    second: RoadNight16x16_89
+  - first:
+      213: 6974526974222617226
+    second: RoadNight16x16_90
+  - first:
+      213: 5189389878315921313
+    second: RoadNight16x16_91
+  - first:
+      213: -2436414505929585870
+    second: RoadNight16x16_92
+  - first:
+      213: 2582144225083850641
+    second: RoadNight16x16_93
+  - first:
+      213: 3245367791515066993
+    second: RoadNight16x16_94
+  - first:
+      213: -5867693683214203152
+    second: RoadNight16x16_95
+  - first:
+      213: -4142733417879070097
+    second: RoadNight16x16_96
+  - first:
+      213: 2506149425633008823
+    second: RoadNight16x16_97
+  - first:
+      213: 6834972382987201889
+    second: RoadNight16x16_98
+  - first:
+      213: 1006937898598076334
+    second: RoadNight16x16_99
+  - first:
+      213: 3259419363062524737
+    second: RoadNight16x16_100
+  - first:
+      213: -3258553187299873568
+    second: RoadNight16x16_101
+  - first:
+      213: 8950860047927541030
+    second: RoadNight16x16_102
+  - first:
+      213: -926104371179660698
+    second: RoadNight16x16_103
+  - first:
+      213: -7877395586875303567
+    second: RoadNight16x16_104
+  - first:
+      213: -167164619770109850
+    second: RoadNight16x16_105
+  - first:
+      213: 3103538506683505416
+    second: RoadNight16x16_106
+  - first:
+      213: -8560804065127157835
+    second: RoadNight16x16_107
+  - first:
+      213: -155402997262424828
+    second: RoadNight16x16_108
+  - first:
+      213: -3719865162105110549
+    second: RoadNight16x16_109
+  - first:
+      213: -8257066574023488364
+    second: RoadNight16x16_110
+  - first:
+      213: 2661736320290005157
+    second: RoadNight16x16_111
+  - first:
+      213: -1077788816926738994
+    second: RoadNight16x16_112
+  - first:
+      213: 6604596843491087949
+    second: RoadNight16x16_113
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -269,7 +410,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -281,7 +422,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -293,7 +458,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -307,8 +472,8 @@ TextureImporter:
       name: RoadNight16x16_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 80
+        x: 96
+        y: 140
         width: 16
         height: 16
       alignment: 0
@@ -319,8 +484,6 @@ TextureImporter:
       - - {x: -8, y: 8}
         - {x: -8, y: -8}
         - {x: 8, y: -8}
-        - {x: 8, y: -8}
-        - {x: -8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: aec11b7952e522d00800000000000000
@@ -333,8 +496,8 @@ TextureImporter:
       name: RoadNight16x16_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 80
+        x: 112
+        y: 140
         width: 16
         height: 16
       alignment: 0
@@ -345,8 +508,6 @@ TextureImporter:
       - - {x: -8, y: 8}
         - {x: -8, y: -8}
         - {x: 8, y: -8}
-        - {x: 8, y: -8}
-        - {x: -8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: a8beb9a23d07a6530800000000000000
@@ -359,8 +520,8 @@ TextureImporter:
       name: RoadNight16x16_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 80
+        x: 128
+        y: 140
         width: 16
         height: 16
       alignment: 0
@@ -371,8 +532,6 @@ TextureImporter:
       - - {x: -8, y: 8}
         - {x: -8, y: -8}
         - {x: 8, y: -8}
-        - {x: 8, y: -8}
-        - {x: -8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: f4ecb5d2acc6806d0800000000000000
@@ -385,8 +544,8 @@ TextureImporter:
       name: RoadNight16x16_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 80
+        x: 144
+        y: 140
         width: 16
         height: 16
       alignment: 0
@@ -411,8 +570,8 @@ TextureImporter:
       name: RoadNight16x16_4
       rect:
         serializedVersion: 2
-        x: 240
-        y: 80
+        x: 368
+        y: 140
         width: 16
         height: 16
       alignment: 0
@@ -437,8 +596,8 @@ TextureImporter:
       name: RoadNight16x16_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 80
+        x: 384
+        y: 140
         width: 16
         height: 16
       alignment: 0
@@ -446,9 +605,7 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 8, y: 8}
-        - {x: -8, y: -8}
-        - {x: -8, y: -8}
+      - - {x: -8, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
@@ -463,8 +620,8 @@ TextureImporter:
       name: RoadNight16x16_6
       rect:
         serializedVersion: 2
-        x: 272
-        y: 80
+        x: 400
+        y: 140
         width: 16
         height: 16
       alignment: 0
@@ -472,9 +629,7 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 8, y: 8}
-        - {x: -8, y: -8}
-        - {x: -8, y: -8}
+      - - {x: -8, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
@@ -489,8 +644,8 @@ TextureImporter:
       name: RoadNight16x16_7
       rect:
         serializedVersion: 2
-        x: 288
-        y: 80
+        x: 416
+        y: 140
         width: 16
         height: 16
       alignment: 0
@@ -498,9 +653,7 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 8, y: 8}
-        - {x: -8, y: -8}
-        - {x: -8, y: -8}
+      - - {x: -8, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
@@ -515,8 +668,8 @@ TextureImporter:
       name: RoadNight16x16_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 96
+        y: 124
         width: 16
         height: 16
       alignment: 0
@@ -536,8 +689,8 @@ TextureImporter:
       name: RoadNight16x16_9
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
+        x: 112
+        y: 124
         width: 16
         height: 16
       alignment: 0
@@ -557,8 +710,8 @@ TextureImporter:
       name: RoadNight16x16_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 128
+        y: 124
         width: 16
         height: 16
       alignment: 0
@@ -578,15 +731,21 @@ TextureImporter:
       name: RoadNight16x16_11
       rect:
         serializedVersion: 2
-        x: 48
-        y: 64
+        x: 144
+        y: 124
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -1, y: 8}
+        - {x: -5, y: 4}
+        - {x: -5, y: -1}
+        - {x: 5, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 960a7ec41ea396ea0800000000000000
@@ -599,8 +758,8 @@ TextureImporter:
       name: RoadNight16x16_12
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 160
+        y: 124
         width: 16
         height: 16
       alignment: 0
@@ -611,8 +770,6 @@ TextureImporter:
       - - {x: -8, y: 8}
         - {x: -8, y: -8}
         - {x: 8, y: -8}
-        - {x: 8, y: -8}
-        - {x: -8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 237a48d074498ad80800000000000000
@@ -625,20 +782,15 @@ TextureImporter:
       name: RoadNight16x16_13
       rect:
         serializedVersion: 2
-        x: 224
-        y: 64
+        x: 352
+        y: 124
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 8, y: 8}
-        - {x: -8, y: -8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 364a89ddf827e8de0800000000000000
@@ -651,8 +803,8 @@ TextureImporter:
       name: RoadNight16x16_14
       rect:
         serializedVersion: 2
-        x: 240
-        y: 64
+        x: 368
+        y: 124
         width: 16
         height: 16
       alignment: 0
@@ -663,8 +815,6 @@ TextureImporter:
       - - {x: 1, y: 8}
         - {x: -8, y: 8}
         - {x: -8, y: -8}
-        - {x: -5, y: -8}
-        - {x: 1, y: -5}
         - {x: 5, y: -1}
         - {x: 5, y: 4}
       tessellationDetail: 0
@@ -679,8 +829,8 @@ TextureImporter:
       name: RoadNight16x16_15
       rect:
         serializedVersion: 2
-        x: 256
-        y: 64
+        x: 384
+        y: 124
         width: 16
         height: 16
       alignment: 0
@@ -700,8 +850,8 @@ TextureImporter:
       name: RoadNight16x16_16
       rect:
         serializedVersion: 2
-        x: 272
-        y: 64
+        x: 400
+        y: 124
         width: 16
         height: 16
       alignment: 0
@@ -721,8 +871,8 @@ TextureImporter:
       name: RoadNight16x16_17
       rect:
         serializedVersion: 2
-        x: 288
-        y: 64
+        x: 416
+        y: 124
         width: 16
         height: 16
       alignment: 0
@@ -742,8 +892,8 @@ TextureImporter:
       name: RoadNight16x16_18
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
+        x: 96
+        y: 108
         width: 16
         height: 16
       alignment: 0
@@ -763,8 +913,8 @@ TextureImporter:
       name: RoadNight16x16_19
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
+        x: 112
+        y: 108
         width: 16
         height: 16
       alignment: 0
@@ -784,8 +934,8 @@ TextureImporter:
       name: RoadNight16x16_20
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
+        x: 128
+        y: 108
         width: 16
         height: 16
       alignment: 0
@@ -805,8 +955,8 @@ TextureImporter:
       name: RoadNight16x16_21
       rect:
         serializedVersion: 2
-        x: 64
-        y: 48
+        x: 144
+        y: 108
         width: 16
         height: 16
       alignment: 0
@@ -826,20 +976,15 @@ TextureImporter:
       name: RoadNight16x16_22
       rect:
         serializedVersion: 2
-        x: 80
-        y: 48
+        x: 160
+        y: 108
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: -8}
-        - {x: -8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 5f85a3ea10ee99230800000000000000
@@ -852,8 +997,8 @@ TextureImporter:
       name: RoadNight16x16_23
       rect:
         serializedVersion: 2
-        x: 208
-        y: 48
+        x: 176
+        y: 108
         width: 16
         height: 16
       alignment: 0
@@ -861,11 +1006,9 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 8, y: 8}
-        - {x: -8, y: -8}
+      - - {x: -8, y: 8}
         - {x: -8, y: -8}
         - {x: 8, y: -8}
-        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: c1a2a7dad66676ea0800000000000000
@@ -878,8 +1021,8 @@ TextureImporter:
       name: RoadNight16x16_24
       rect:
         serializedVersion: 2
-        x: 224
-        y: 48
+        x: 336
+        y: 108
         width: 16
         height: 16
       alignment: 0
@@ -899,8 +1042,8 @@ TextureImporter:
       name: RoadNight16x16_25
       rect:
         serializedVersion: 2
-        x: 240
-        y: 48
+        x: 352
+        y: 108
         width: 16
         height: 16
       alignment: 0
@@ -920,8 +1063,8 @@ TextureImporter:
       name: RoadNight16x16_26
       rect:
         serializedVersion: 2
-        x: 256
-        y: 48
+        x: 368
+        y: 108
         width: 16
         height: 16
       alignment: 0
@@ -941,8 +1084,8 @@ TextureImporter:
       name: RoadNight16x16_27
       rect:
         serializedVersion: 2
-        x: 272
-        y: 48
+        x: 384
+        y: 108
         width: 16
         height: 16
       alignment: 0
@@ -962,20 +1105,15 @@ TextureImporter:
       name: RoadNight16x16_28
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
+        x: 400
+        y: 108
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: 8}
-        - {x: 8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 36b1424a974dd2e20800000000000000
@@ -988,8 +1126,8 @@ TextureImporter:
       name: RoadNight16x16_29
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 416
+        y: 108
         width: 16
         height: 16
       alignment: 0
@@ -1009,8 +1147,8 @@ TextureImporter:
       name: RoadNight16x16_30
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
+        x: 96
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1030,8 +1168,8 @@ TextureImporter:
       name: RoadNight16x16_31
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
+        x: 112
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1051,8 +1189,8 @@ TextureImporter:
       name: RoadNight16x16_32
       rect:
         serializedVersion: 2
-        x: 80
-        y: 32
+        x: 128
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1072,8 +1210,8 @@ TextureImporter:
       name: RoadNight16x16_33
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
+        x: 144
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1093,8 +1231,8 @@ TextureImporter:
       name: RoadNight16x16_34
       rect:
         serializedVersion: 2
-        x: 112
-        y: 32
+        x: 160
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1114,8 +1252,8 @@ TextureImporter:
       name: RoadNight16x16_35
       rect:
         serializedVersion: 2
-        x: 128
-        y: 32
+        x: 176
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1135,8 +1273,8 @@ TextureImporter:
       name: RoadNight16x16_36
       rect:
         serializedVersion: 2
-        x: 144
-        y: 32
+        x: 192
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1156,8 +1294,8 @@ TextureImporter:
       name: RoadNight16x16_37
       rect:
         serializedVersion: 2
-        x: 160
-        y: 32
+        x: 208
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1177,8 +1315,8 @@ TextureImporter:
       name: RoadNight16x16_38
       rect:
         serializedVersion: 2
-        x: 176
-        y: 32
+        x: 224
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1198,8 +1336,8 @@ TextureImporter:
       name: RoadNight16x16_39
       rect:
         serializedVersion: 2
-        x: 192
-        y: 32
+        x: 240
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1219,8 +1357,8 @@ TextureImporter:
       name: RoadNight16x16_40
       rect:
         serializedVersion: 2
-        x: 208
-        y: 32
+        x: 256
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1240,8 +1378,8 @@ TextureImporter:
       name: RoadNight16x16_41
       rect:
         serializedVersion: 2
-        x: 224
-        y: 32
+        x: 272
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1261,8 +1399,8 @@ TextureImporter:
       name: RoadNight16x16_42
       rect:
         serializedVersion: 2
-        x: 240
-        y: 32
+        x: 288
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1282,8 +1420,8 @@ TextureImporter:
       name: RoadNight16x16_43
       rect:
         serializedVersion: 2
-        x: 256
-        y: 32
+        x: 304
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1303,20 +1441,15 @@ TextureImporter:
       name: RoadNight16x16_44
       rect:
         serializedVersion: 2
-        x: 272
-        y: 32
+        x: 320
+        y: 92
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: -8, y: -8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 59d1e6856548ad450800000000000000
@@ -1329,20 +1462,15 @@ TextureImporter:
       name: RoadNight16x16_45
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
+        x: 336
+        y: 92
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: 8}
-        - {x: 8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: a08891f05fef2d430800000000000000
@@ -1355,8 +1483,8 @@ TextureImporter:
       name: RoadNight16x16_46
       rect:
         serializedVersion: 2
-        x: 48
-        y: 16
+        x: 352
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1376,8 +1504,8 @@ TextureImporter:
       name: RoadNight16x16_47
       rect:
         serializedVersion: 2
-        x: 64
-        y: 16
+        x: 368
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1397,20 +1525,15 @@ TextureImporter:
       name: RoadNight16x16_48
       rect:
         serializedVersion: 2
-        x: 80
-        y: 16
+        x: 384
+        y: 92
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: 1}
-        - {x: -1, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: facba57df1e008a60800000000000000
@@ -1423,8 +1546,8 @@ TextureImporter:
       name: RoadNight16x16_49
       rect:
         serializedVersion: 2
-        x: 96
-        y: 16
+        x: 400
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1444,8 +1567,8 @@ TextureImporter:
       name: RoadNight16x16_50
       rect:
         serializedVersion: 2
-        x: 112
-        y: 16
+        x: 416
+        y: 92
         width: 16
         height: 16
       alignment: 0
@@ -1465,15 +1588,18 @@ TextureImporter:
       name: RoadNight16x16_51
       rect:
         serializedVersion: 2
-        x: 128
-        y: 16
+        x: 96
+        y: 76
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: 3120c60990d9bff80800000000000000
@@ -1486,8 +1612,8 @@ TextureImporter:
       name: RoadNight16x16_52
       rect:
         serializedVersion: 2
-        x: 144
-        y: 16
+        x: 112
+        y: 76
         width: 16
         height: 16
       alignment: 0
@@ -1507,8 +1633,8 @@ TextureImporter:
       name: RoadNight16x16_53
       rect:
         serializedVersion: 2
-        x: 160
-        y: 16
+        x: 128
+        y: 76
         width: 16
         height: 16
       alignment: 0
@@ -1528,8 +1654,8 @@ TextureImporter:
       name: RoadNight16x16_54
       rect:
         serializedVersion: 2
-        x: 176
-        y: 16
+        x: 144
+        y: 76
         width: 16
         height: 16
       alignment: 0
@@ -1549,8 +1675,8 @@ TextureImporter:
       name: RoadNight16x16_55
       rect:
         serializedVersion: 2
-        x: 192
-        y: 16
+        x: 160
+        y: 76
         width: 16
         height: 16
       alignment: 0
@@ -1570,8 +1696,8 @@ TextureImporter:
       name: RoadNight16x16_56
       rect:
         serializedVersion: 2
-        x: 208
-        y: 16
+        x: 176
+        y: 76
         width: 16
         height: 16
       alignment: 0
@@ -1580,9 +1706,9 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 1, y: -8}
-        - {x: 8, y: 1}
+        - {x: -8, y: 1}
+        - {x: -1, y: -8}
+        - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
@@ -1596,8 +1722,8 @@ TextureImporter:
       name: RoadNight16x16_57
       rect:
         serializedVersion: 2
-        x: 224
-        y: 16
+        x: 192
+        y: 76
         width: 16
         height: 16
       alignment: 0
@@ -1617,8 +1743,8 @@ TextureImporter:
       name: RoadNight16x16_58
       rect:
         serializedVersion: 2
-        x: 240
-        y: 16
+        x: 208
+        y: 76
         width: 16
         height: 16
       alignment: 0
@@ -1638,20 +1764,15 @@ TextureImporter:
       name: RoadNight16x16_59
       rect:
         serializedVersion: 2
-        x: 256
-        y: 16
+        x: 224
+        y: 76
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: -8, y: -8}
-        - {x: 8, y: 8}
-        - {x: 8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 45ca8926fa5c197e0800000000000000
@@ -1664,8 +1785,8 @@ TextureImporter:
       name: RoadNight16x16_60
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
+        x: 240
+        y: 76
         width: 16
         height: 16
       alignment: 0
@@ -1685,8 +1806,8 @@ TextureImporter:
       name: RoadNight16x16_61
       rect:
         serializedVersion: 2
-        x: 112
-        y: 0
+        x: 256
+        y: 76
         width: 16
         height: 16
       alignment: 0
@@ -1706,8 +1827,8 @@ TextureImporter:
       name: RoadNight16x16_62
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
+        x: 272
+        y: 76
         width: 16
         height: 16
       alignment: 0
@@ -1727,8 +1848,8 @@ TextureImporter:
       name: RoadNight16x16_63
       rect:
         serializedVersion: 2
-        x: 144
-        y: 0
+        x: 288
+        y: 76
         width: 16
         height: 16
       alignment: 0
@@ -1748,8 +1869,8 @@ TextureImporter:
       name: RoadNight16x16_64
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
+        x: 304
+        y: 76
         width: 16
         height: 16
       alignment: 0
@@ -1769,8 +1890,8 @@ TextureImporter:
       name: RoadNight16x16_65
       rect:
         serializedVersion: 2
-        x: 176
-        y: 0
+        x: 320
+        y: 76
         width: 16
         height: 16
       alignment: 0
@@ -1790,8 +1911,34 @@ TextureImporter:
       name: RoadNight16x16_66
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
+        x: 336
+        y: 76
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 1, y: -8}
+        - {x: 8, y: 1}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d92467f1fc39840800000000000000
+      internalID: 5229751326342290789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_67
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 76
         width: 16
         height: 16
       alignment: 0
@@ -1801,8 +1948,983 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56d92467f1fc39840800000000000000
-      internalID: 5229751326342290789
+      spriteID: 652f1d6367eec82a0800000000000000
+      internalID: -6733745151332453802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_68
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 76
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beafb3bcf32341660800000000000000
+      internalID: 7355559340976896747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_69
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 76
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c368dce5a864fa390800000000000000
+      internalID: -7804942069099821508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_70
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 76
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d0c2bbc68634250800000000000000
+      internalID: 5927696350755687796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_71
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 76
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3582c260e675d1560800000000000000
+      internalID: 7286075902216906835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_72
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc80c7d9f1d283460800000000000000
+      internalID: 7221571616297978061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_73
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126757c185bebe8e0800000000000000
+      internalID: -1662976873716156895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_74
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43215fa076ed7f4b0800000000000000
+      internalID: -5406608293488160204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_75
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb608543bfe3bcaf0800000000000000
+      internalID: -375136895319406913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_76
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61540beda3a790950800000000000000
+      internalID: 6415793537428768022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_77
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5f67b0fb2df1af0800000000000000
+      internalID: -423388121976605227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_78
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59c9a91633935220800000000000000
+      internalID: 2473482480924608862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_79
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddcd18880b5ff810800000000000000
+      internalID: 1801258468173008343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_80
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce6c2fc57616d030800000000000000
+      internalID: 3519024854079401676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_81
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5b1b5f96b087070800000000000000
+      internalID: 8104240079174743468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_82
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b968378cf2ef240800000000000000
+      internalID: 4827348388565916522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_83
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f306419966f96ac0800000000000000
+      internalID: -3861284272224205840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_84
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb89131c9184cef90800000000000000
+      internalID: -6923079251722659649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_85
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5519e8190e409710800000000000000
+      internalID: 1697942860498277722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_86
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 60
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4cb97e658c89310800000000000000
+      internalID: 1412098758759138508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_87
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 44
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668862af98dd24820800000000000000
+      internalID: 2901124694657108070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_88
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 44
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1cbae1548e4216d0800000000000000
+      internalID: -3021266069795193829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_89
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 44
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d41ce4f770750770800000000000000
+      internalID: 8576384725909509330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_90
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 44
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a4be6945f7ac060800000000000000
+      internalID: 6974526974222617226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_91
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 44
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af270a899a640840800000000000000
+      internalID: 5189389878315921313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_92
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 44
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b45706aed103ed0800000000000000
+      internalID: -2436414505929585870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_93
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 44
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ff2feed7e95d320800000000000000
+      internalID: 2582144225083850641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_94
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 44
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172efbacfccd90d20800000000000000
+      internalID: 3245367791515066993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_95
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 44
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6c639fea3c19ea0800000000000000
+      internalID: -5867693683214203152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_96
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a9d24d7ed0286c0800000000000000
+      internalID: -4142733417879070097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_97
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc97ecdf91a7c220800000000000000
+      internalID: 2506149425633008823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_98
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16dae894b23bade50800000000000000
+      internalID: 6834972382987201889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_99
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf01dc0fac59fd00800000000000000
+      internalID: 1006937898598076334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_100
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b2f5d34a8cb3d20800000000000000
+      internalID: 3259419363062524737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_101
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec2645042b47c2d0800000000000000
+      internalID: -3258553187299873568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_102
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62df4f63ac7d73c70800000000000000
+      internalID: 8950860047927541030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_103
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a56ea2bf0d523f0800000000000000
+      internalID: -926104371179660698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_104
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1795111337edda290800000000000000
+      internalID: -7877395586875303567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_105
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 12
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660e69bf9ac1eadf0800000000000000
+      internalID: -167164619770109850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_106
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 12
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80bdd9d14dbf11b20800000000000000
+      internalID: 3103538506683505416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_107
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 12
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf20625f0ae13980800000000000000
+      internalID: -8560804065127157835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_108
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 12
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405642f1cc5e7ddf0800000000000000
+      internalID: -155402997262424828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_109
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 12
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: befbf500852606cc0800000000000000
+      internalID: -3719865162105110549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_110
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 12
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c0490e2b1096d80800000000000000
+      internalID: -8257066574023488364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_111
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 12
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a024a0b41360f420800000000000000
+      internalID: 2661736320290005157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_112
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 12
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5713808ccea01f0800000000000000
+      internalID: -1077788816926738994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadNight16x16_113
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 12
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46d3f426dd38ab50800000000000000
+      internalID: 6604596843491087949
       vertices: []
       indices: 
       edges: []

@@ -1,11 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AnimationSwitcher : MonoBehaviour
 {
 
-    [SerializeField] private Rigidbody2D _rigidbody;
     private Animator _animator;
     private PlayerAttack _playerAttack;
     private InputSystemReader _inputSystemReader;
@@ -18,7 +15,6 @@ public class AnimationSwitcher : MonoBehaviour
 
     private void Start()
     {
-        _rigidbody = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
     }
 
@@ -26,16 +22,15 @@ public class AnimationSwitcher : MonoBehaviour
     private void Update()
     {
         SwitchAnimation();
-
     }
 
 
     private void SwitchAnimation()
     {
-
         if(_playerAttack.CurrentAttackState)
         {
             _animator.SetBool("isAttack", true);
+            _animator.SetFloat("attackSpeed", _playerAttack.AttackDelay);
         }
         else
         {

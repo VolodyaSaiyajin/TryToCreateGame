@@ -1,75 +1,57 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PhysicsMovement : MonoBehaviour
+public abstract class PhysicsMovement : MonoBehaviour
 {
-    [SerializeField] private float _minGroundNormalY = 0.65f;
+    [SerializeField] protected float _groundCheckLineSize = 0.1f;
+    [SerializeField] protected float _gravityModifier = 1f;
+    protected const float shellRadius = 0.01f;
+    protected const float _minMoveDistance = 0.001f;
+    [SerializeField] protected float _minGroundNormalY;
+    protected Vector2 _targetVelocity;
+    protected Vector2 _velocity;
+    protected Vector2 _groundNormal;
+
+    protected bool _isGrounded;
+    protected bool _isJump;
+
+    protected RaycastHit2D[] _hitBuffer = new RaycastHit2D[1];
+    protected readonly RaycastHit2D[] _groundHits = new RaycastHit2D[16];
+    protected List<RaycastHit2D> _hitBufferList = new List<RaycastHit2D>(16);
+    [SerializeField] protected ContactFilter2D _contactFilter;
 
     protected Rigidbody2D _rb2d;
 
-    protected float gravityModifier = 1f;
-    protected Vector2 _velocity;
-    protected const float _minMoveDistance = 0.001f;
-    protected Vector2 _targetVelocity;
-    protected bool _isGrounded;
 
-    protected ContactFilter2D _contactFilter;
-    protected RaycastHit2D[] _hitBuffer = new RaycastHit2D[16];
-    protected List<RaycastHit2D> _hitBufferList = new List<RaycastHit2D>(16);
-    protected Vector2 _groundNormal;
-
-    protected const float shellRadius = 0.01f;
-
-    private void OnEnable()
+    private void OnValidate()
     {
-        _rb2d = GetComponent<Rigidbody2D>();
-    }
+        if (_minGroundNormalY <= 0 || _minGroundNormalY >= 1)
+        {
+            _minGroundNormalY = 0;
+        }
 
-
-    private void Start()
-    {
-        _contactFilter.useTriggers = false;
-        _contactFilter.SetLayerMask(Physics2D.GetLayerCollisionMask(gameObject.layer));
-        _contactFilter.useLayerMask = true;
-    }
-
-    private void Update()
-    {
-        _targetVelocity = Vector2.zero;
-        ComputeVelocity();
-    }
-
-    protected virtual void ComputeVelocity()
-    {
     }
 
     private void FixedUpdate()
     {
-        _velocity += gravityModifier * Time.deltaTime * Physics2D.gravity;
-
+        _velocity += _gravityModifier * Time.deltaTime * Physics2D.gravity;
         _velocity.x = _targetVelocity.x;
         _isGrounded = false;
-
         Vector2 deltaPosition = _velocity * Time.deltaTime;
-
-
         Vector2 moveAlongGround = new Vector2(_groundNormal.y, -_groundNormal.x);
 
         Vector2 move = moveAlongGround * deltaPosition.x;
-
         Movement(move, false);
-
         move = Vector2.up * deltaPosition.y;
 
         Movement(move, true);
+        GroundCheck();
     }
 
-    private void Movement(Vector2 move, bool yMovement)
+    protected void Movement(Vector2 move, bool yMovement)
     {
         float distance = move.magnitude;
-
+        
         if (distance > _minMoveDistance)
         {
             int count = _rb2d.Cast(move, _contactFilter, _hitBuffer, distance + shellRadius);
@@ -92,21 +74,36 @@ public class PhysicsMovement : MonoBehaviour
                         _groundNormal = currentNormal;
                         currentNormal.x = 0;
                     }
-
                 }
 
                 float projection = Vector2.Dot(_velocity, currentNormal);
                 if (projection < 0)
                 {
-                    _velocity = _velocity - projection * currentNormal;
+                    _velocity -= projection * currentNormal;
                 }
 
                 float modifiedDistance = _hitBufferList[i].distance - shellRadius;
-
                 distance = modifiedDistance < distance ? modifiedDistance : distance;
             }
         }
 
-        _rb2d.position += move.normalized * distance;
+        var a = _rb2d.position += move.normalized * distance;
+        Debug.DrawLine(transform.position, a);
     }
+
+
+    protected void GroundCheck()
+    {
+        int collisionsCount = _rb2d.Cast(-transform.up, _contactFilter, _groundHits, _groundCheckLineSize);
+
+        if (collisionsCount >= 1)
+        {
+            _isGrounded = true;
+        }
+        else
+        {
+            _isGrounded = false;
+        }
+    }
+
 }

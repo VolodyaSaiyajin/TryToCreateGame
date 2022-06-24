@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 
 public class PlayerMove : MonoBehaviour
@@ -17,8 +14,7 @@ public class PlayerMove : MonoBehaviour
     private Vector2 _jumpDir;
     private Vector2 _groundNormal;
 
-    private Vector2 _velocity;
-    
+    private Vector2 _velocity;    
     public Vector2 MoveDir => _targetVelocity;
 
     private readonly RaycastHit2D[] _groundHits = new RaycastHit2D[1];
@@ -26,8 +22,7 @@ public class PlayerMove : MonoBehaviour
 
 
     private void FixedUpdate()
-    {
-        
+    {        
         Move();
         GroundCheck();
     }
@@ -89,10 +84,6 @@ public class PlayerMove : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-       
-
-        
-
         if (_isGround == true)
         {
             Gizmos.color = Color.green;

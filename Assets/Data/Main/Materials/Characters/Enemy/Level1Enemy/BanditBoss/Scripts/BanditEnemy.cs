@@ -2,27 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BanditEnemy : MonoBehaviour, IEnemy1Level
+public class BanditEnemy : MonoBehaviour
 {
-   [SerializeField] private Player _player;
+    [SerializeField] private PlayerParams _player;
+    [SerializeField] private float _radius;
+    [Header("Set params enemy")]
+    [SerializeField] private int _health;
+    [SerializeField] private int _damage;
+    Bounds _bounds;
+    private Rigidbody2D _rb2d;
 
-    public int Health { get; private set; }
-    public int Damage { get; }
+     public int Health { get; private set; }
+    [SerializeField] public int Damage { get; private set; }
 
-    private float _maxDistanceToAttack = 4;
     private bool _canSee;
     private RaycastHit2D _hit;
+    private Collider2D[] _hits;
+    private Vector2 _eyePoint;
+    [SerializeField] private float _eyePointHeight;
 
-    float _angle;
+    
+
+    
     public BanditEnemy()
     {
-        Damage = 30;
-        Health = 100;
+        Damage = _damage;
+        Health = _health;
+    }
+
+    private void Start()
+    {
+        _rb2d = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
-        FindAngle();
+        //_rb2d.velocity = new Vector2(transform.position.x + 0.1f, transform.position.y);
+        CheckDistanceBetweenCharacter();
     }
 
     public void ApplyDamage(int damage)
@@ -37,50 +53,18 @@ public class BanditEnemy : MonoBehaviour, IEnemy1Level
         }
     }
 
-   
-
-
     private void CheckDistanceBetweenCharacter()
     {
-        _hit = Physics2D.Raycast(transform.position, transform.right, _maxDistanceToAttack);
+        _eyePoint = new Vector2(transform.position.x, transform.position.y + _eyePointHeight);
+        _hits = Physics2D.OverlapCircleAll(transform.position, _radius);
     }
-
-
-
     public void Attack()
     {
         throw new System.NotImplementedException();
     }
-
-
-    private void FindAngle()
-    {
-    
-        Vector2 targetDir = transform.position - _player.transform.position;
-
-        _angle = Vector2.Angle(transform.position, targetDir);
-
-    }
-
     private void OnDrawGizmos()
     {
-        if (_canSee)
-        {
-            Gizmos.color = Color.yellow;
-        }
-        else
-        {
-            Gizmos.color = Color.red;
-        }
-
-        if (transform.eulerAngles.y == 0)
-        {
-            Gizmos.DrawLine(transform.position, new Vector3(transform.position.x + _maxDistanceToAttack, transform.position.y));
-        }
-        else if (transform.eulerAngles.y == 180)
-        {
-            Gizmos.DrawLine(transform.position, new Vector3(transform.position.x - _maxDistanceToAttack, transform.position.y));
-        }
+        Gizmos.DrawWireSphere(_eyePoint, _radius);
     }
 
 }

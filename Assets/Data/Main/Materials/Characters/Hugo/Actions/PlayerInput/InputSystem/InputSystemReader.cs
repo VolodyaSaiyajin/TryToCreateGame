@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -47,7 +45,7 @@ public class InputSystemReader : MonoBehaviour
     public void OnHorizontalMovement(InputAction.CallbackContext context)
     {
         _buttonMoveValue = context.ReadValue<Vector2>();
-        _plyaerMoveContoller.SetMoveDirection(_buttonMoveValue);
+        _plyaerMoveContoller.SetMoveHorizontalDirection(_buttonMoveValue);
     }
 
     public void OnJump(InputAction.CallbackContext context)

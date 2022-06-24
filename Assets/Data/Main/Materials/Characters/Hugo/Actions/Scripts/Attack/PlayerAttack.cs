@@ -1,15 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     public float CurrentAttackDelay => _currentAttackDelay;
+    public float AttackDelay => _attackDelay;
     public bool CurrentAttackState => _isAttack;
+
 
     private Rigidbody2D _rb2d;
 
     [Header("Set target and damage")]
-    [SerializeField] private BanditEnemy _banditEnemy;
     [SerializeField] private int _damage = 10;
     [SerializeField] private float _maxDistanceToAttack;
     [SerializeField] private float _attackDelay;
@@ -29,10 +29,10 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        ÑheckDistance();
+        CheckDistance();
         TryAttack(_attackDelay);
     }
-    private void ÑheckDistance()
+    private void CheckDistance()
     {
         
         _hitTargetRight = Physics2D.Raycast(_handPoint.transform.position, _handPoint.transform.right, _maxDistanceToAttack, _layerMask);
@@ -62,10 +62,12 @@ public class PlayerAttack : MonoBehaviour
             _isAttack = false;
             _currentAttackDelay += Time.deltaTime;
         }
-        else if (_canTouch && _isAttack && _banditEnemy)
+        else if (_canTouch && _isAttack)
         {
             _hitTargetRight.collider.TryGetComponent(out IEnemy1Level enemy);
-            enemy.ApplyDamage(_damage);
+            if(enemy != null)
+                enemy.ApplyDamage(_damage);
+
             _currentAttackDelay = 0f;
         }
         else if (_currentAttackDelay >= delay && _isAttack)
