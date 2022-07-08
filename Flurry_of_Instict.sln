@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOTween.Modules", "DOTween.Modules.csproj", "{C8D02B3D-80DC-806F-41C6-63835B1ADE54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Settings", "Settings.csproj", "{859995A9-6480-361A-E6A5-E2C2B594C053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{CDFA7CCE-823B-539D-7261-1FEAEF733314}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{C8D02B3D-80DC-806F-41C6-63835B1ADE54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8D02B3D-80DC-806F-41C6-63835B1ADE54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8D02B3D-80DC-806F-41C6-63835B1ADE54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{859995A9-6480-361A-E6A5-E2C2B594C053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{859995A9-6480-361A-E6A5-E2C2B594C053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{859995A9-6480-361A-E6A5-E2C2B594C053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{859995A9-6480-361A-E6A5-E2C2B594C053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDFA7CCE-823B-539D-7261-1FEAEF733314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDFA7CCE-823B-539D-7261-1FEAEF733314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDFA7CCE-823B-539D-7261-1FEAEF733314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDFA7CCE-823B-539D-7261-1FEAEF733314}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class AnimationSwitcher : MonoBehaviour
 {
-
     private Animator _animator;
     private PlayerAttack _playerAttack;
     private InputSystemReader _inputSystemReader;
@@ -16,15 +15,12 @@ public class AnimationSwitcher : MonoBehaviour
     private void Start()
     {
         _animator = GetComponent<Animator>();
-    }
-
+    } 
 
     private void Update()
     {
         SwitchAnimation();
     }
-
-
     private void SwitchAnimation()
     {
         if(_playerAttack.CurrentAttackState)

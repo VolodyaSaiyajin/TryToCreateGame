@@ -1,13 +1,12 @@
 
-using UnityEngine;
-
 public class SchoolGuy_IdleState : IdleState
 {
-    private SchoolGuy _enemy;
+    private StateSelector _enemy;
 
-    public SchoolGuy_IdleState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_IdleState stateData, SchoolGuy enemy) : base(entity, stateMachine, animBoolName, stateData)
+    public SchoolGuy_IdleState(EntityAnimation entityAnimation, FiniteStateMachine stateMachine, string animBoolName, D_IdleState idleStateData, StateSelector enemy, EnemyLookAroundEntity enemyLookAround, EnemyIdleEntity enemyIdle)
+        : base(entityAnimation, stateMachine, animBoolName, idleStateData, enemyLookAround, enemyIdle)
     {
-        this._enemy = enemy;
+        _enemy = enemy;
     }
 
     public override void Enter()
@@ -25,7 +24,11 @@ public class SchoolGuy_IdleState : IdleState
         base.LogicUpdate();
         if (IsIdleTimeOver)
         {
-            stateMachine.ChangeState(_enemy.MoveState);
+            StateMachine.ChangeState(_enemy.PatrolState);
+        }
+        else if (IsDetectEnemy)
+        {
+            StateMachine.ChangeState(_enemy.DetectEnemyState);
         }
     }
 

@@ -1,23 +1,29 @@
 public class PatrolState : State
 {
-    protected D_PatrolState stateData;
+    protected D_PatrolState StateData;
+    protected EnemyPatrolEntity EnemyPatrol;
+    protected EnemyLookAroundEntity EnemyLookAround;
 
-    protected bool isDetectingWall;
-    protected bool isDetectingLedge;
-    protected bool isDetectEnemy;
+    protected bool IsDetectingWall;
+    protected bool IsDetectingLedge;
+    protected bool IsDetectEnemy;
 
-    public PatrolState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_PatrolState stateData) : base(entity, stateMachine, animBoolName)
+    public PatrolState(EntityAnimation entityAnimation, FiniteStateMachine stateMachine, string animBoolName,
+        D_PatrolState stateData, StateSelector stateSelector, EnemyLookAroundEntity enemyLookAround, EnemyPatrolEntity enemyPatrol)
+        : base(entityAnimation, stateMachine, animBoolName)
     {
-        this.stateData = stateData;
+        StateData = stateData;
+        EnemyLookAround = enemyLookAround;
+        EnemyPatrol = enemyPatrol;
     }
 
     public override void Enter()
     {
         base.Enter();
-        entity.SetVelocityHorizontal(stateData.movementSpeed);
+        EnemyPatrol.SetVerticalVelocity(StateData.movementSpeed);
 
-        isDetectingLedge = entity.CheckLedge();
-        isDetectingWall = entity.CheckColliderHorizontal();
+        IsDetectingLedge = EnemyLookAround.CheckLedge();
+        IsDetectingWall = EnemyLookAround.CheckColliderHorizontal();
     }
 
     public override void Exit()
@@ -28,14 +34,14 @@ public class PatrolState : State
     public override void LogicUpdate()
     {
         base.LogicUpdate();
+
     }
 
     public override void PhysicsUpdate()
     {
         base.PhysicsUpdate();
-        isDetectingLedge = entity.CheckLedge();
-        isDetectingWall = entity.CheckColliderHorizontal();
-        isDetectEnemy = entity.CheckEnemy();
-
+        IsDetectingLedge = EnemyLookAround.CheckLedge();
+        IsDetectingWall = EnemyLookAround.CheckColliderHorizontal();
+        IsDetectEnemy = EnemyLookAround.IsSeeEnemy();
     }
 }

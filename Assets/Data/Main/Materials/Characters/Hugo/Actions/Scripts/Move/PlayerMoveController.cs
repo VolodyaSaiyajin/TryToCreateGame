@@ -3,11 +3,18 @@ using UnityEngine;
 
 public class PlayerMoveController : PhysicsMovement
 {
+    
+
     private Vector2 _moveDirection;
     [SerializeField] private float _jumpTakeOffSpeed = 7;
     [SerializeField] private float _speedModifier = 5;
     [SerializeField] private float _maxTakeOffHight = 9.2f;
     [SerializeField] private float _jumpSpeedSlowdown;
+
+    [Header("Debug")]
+
+    [SerializeField] bool _debugGizmos;
+
 
     private void OnValidate()
     {
@@ -70,5 +77,13 @@ public class PlayerMoveController : PhysicsMovement
     public void SetMoveHorizontalDirection(Vector2 moveDir)
     {
         _moveDirection.x = moveDir.x;
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (_debugGizmos)
+        {
+            Gizmos.DrawCube(transform.position, new Vector2(0.1f, 0.1f));
+        }
     }
 }

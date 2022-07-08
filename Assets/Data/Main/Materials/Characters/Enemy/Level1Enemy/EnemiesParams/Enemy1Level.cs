@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Enemy1Level : MonoBehaviour, IEnemy1Level
 {
-    private PlayerParams _player;
+    private readonly PlayerParams _player;
 
     public int Health { get; private set; }
     public int Damage { get; }

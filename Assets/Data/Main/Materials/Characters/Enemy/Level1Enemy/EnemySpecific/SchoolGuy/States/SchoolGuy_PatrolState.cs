@@ -1,11 +1,14 @@
 
 public class SchoolGuy_PatrolState : PatrolState
 {
-    private SchoolGuy enemy;
+    private readonly StateSelector _enemy;
 
-    public SchoolGuy_PatrolState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_PatrolState stateData, SchoolGuy enemy) : base(entity, stateMachine, animBoolName, stateData)
+    public SchoolGuy_PatrolState(EntityAnimation entityAnimation, FiniteStateMachine stateMachine, string animBoolName,
+        D_PatrolState stateData, StateSelector enemy, EnemyLookAroundEntity enemyLookAround,
+        EnemyPatrolEntity enemyPatrol)
+        : base(entityAnimation, stateMachine, animBoolName, stateData, enemy, enemyLookAround, enemyPatrol)
     {
-        this.enemy = enemy;
+        _enemy = enemy;
     }
 
     public override void Enter()
@@ -22,22 +25,19 @@ public class SchoolGuy_PatrolState : PatrolState
     {
         base.LogicUpdate();
 
-        if (isDetectingWall || !isDetectingLedge)
-        {            
-            enemy.IdleState.SetFlipAfterIdle(true);
-            stateMachine.ChangeState(enemy.IdleState);
-        }
-
-
-        if (isDetectEnemy)
+        if (IsDetectingWall || !IsDetectingLedge)
         {
-            stateMachine.ChangeState(enemy.AttackState);
+            _enemy.IdleState.SetFlipAfterIdle(true);
+            StateMachine.ChangeState(_enemy.IdleState);
+        }
+        else if (IsDetectEnemy)
+        {
+            StateMachine.ChangeState(_enemy.DetectEnemyState);
         }
     }
 
     public override void PhysicsUpdate()
     {
         base.PhysicsUpdate();
-        
     }
 }

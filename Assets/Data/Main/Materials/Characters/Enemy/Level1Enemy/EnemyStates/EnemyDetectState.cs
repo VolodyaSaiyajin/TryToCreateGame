@@ -1,8 +1,16 @@
 
 public class EnemyDetectState : State
 {
-    public EnemyDetectState(Entity entity, FiniteStateMachine stateMachine, string animBoolName) : base(entity, stateMachine, animBoolName)
+    protected PlayerEntity PlayerEntity;
+    protected EnemyDetectEntity Enemy;
+    protected D_EnemyDetectState StateData;
+
+    public EnemyDetectState(EntityAnimation entityAnimation, FiniteStateMachine stateMachine, string animBoolName, D_EnemyDetectState stateData,EnemyDetectEntity enemy)
+        : base(entityAnimation, stateMachine, animBoolName)
     {
+        Enemy = enemy;
+        this.StateData = stateData;
+        this.EntityAnimationAnimation = entityAnimation;
     }
 
     public override void Enter()
@@ -23,5 +31,7 @@ public class EnemyDetectState : State
     public override void PhysicsUpdate()
     {
         base.PhysicsUpdate();
+        
     }
+    
 }

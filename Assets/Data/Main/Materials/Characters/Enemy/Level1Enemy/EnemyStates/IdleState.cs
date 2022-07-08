@@ -2,40 +2,37 @@ using UnityEngine;
 
 public class IdleState : State
 {
+    protected D_IdleState IdleStateData;
+    
+    protected EnemyIdleEntity EnemyIdleEntity;
 
-    protected D_IdleState stateData;
-
-    protected bool isFlipAfterIdle;
+    protected bool IsFlipAfterIdle;
     protected bool IsIdleTimeOver;
+    protected bool IsDetectEnemy;
 
-    protected float idleTime;
+    protected float IdleTime;
 
-    public IdleState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_IdleState stateData) : base(entity, stateMachine, animBoolName)
+    public IdleState(EntityAnimation entityAnimation, FiniteStateMachine stateMachine, string animBoolName,
+        D_IdleState idleStateData, EnemyLookAroundEntity enemyLookAround, EnemyIdleEntity enemyIdleEntity)
+        : base(entityAnimation, stateMachine, animBoolName)
     {
-        this.stateData = stateData;
+        this.IdleStateData = idleStateData;
+        EntityAnimationAnimation = entityAnimation;
+        EnemyIdleEntity = enemyIdleEntity;
     }
 
     public override void Enter()
     {
         base.Enter();
-        entity.SetVelocityHorizontal(0f);
+        EnemyIdleEntity.SetVerticalVelocity(0f);
         IsIdleTimeOver = false;
         SetRandomIdleTime();
-    }
-
-    public override void Exit()
-    {
-        base.Exit();
-        if (isFlipAfterIdle)
-        {
-            entity.Flip();
-        }
     }
 
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-        if(Time.time > startTime + idleTime)
+        if (Time.time > StartTime + IdleTime)
         {
             IsIdleTimeOver = true;
         }
@@ -48,11 +45,11 @@ public class IdleState : State
 
     public void SetFlipAfterIdle(bool flip)
     {
-        isFlipAfterIdle = flip;
+        IsFlipAfterIdle = flip;
     }
 
     private void SetRandomIdleTime()
     {
-        idleTime = Random.Range(stateData.minIdleTime, stateData.maxIdleTime);
+        IdleTime = Random.Range(IdleStateData.minIdleTime, IdleStateData.maxIdleTime);
     }
 }

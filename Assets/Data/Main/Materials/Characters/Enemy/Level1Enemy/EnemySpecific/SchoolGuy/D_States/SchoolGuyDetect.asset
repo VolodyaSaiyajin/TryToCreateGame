@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbb381e087391744997d09da0807c5dc, type: 3}
   m_Name: SchoolGuyDetect
   m_EditorClassIdentifier: 
-  RunSpeed: 1
+  RunSpeed: 5

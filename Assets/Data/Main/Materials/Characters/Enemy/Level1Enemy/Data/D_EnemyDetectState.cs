@@ -5,4 +5,5 @@ using UnityEngine;
 public class D_EnemyDetectState : ScriptableObject
 {
     public float RunSpeed = 1f;
+    public float MaxDistanceToFollow = 5f;
 }

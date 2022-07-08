@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BanditEnemy : MonoBehaviour
@@ -37,7 +35,6 @@ public class BanditEnemy : MonoBehaviour
 
     private void Update()
     {
-        //_rb2d.velocity = new Vector2(transform.position.x + 0.1f, transform.position.y);
         CheckDistanceBetweenCharacter();
     }
 
@@ -56,15 +53,10 @@ public class BanditEnemy : MonoBehaviour
     private void CheckDistanceBetweenCharacter()
     {
         _eyePoint = new Vector2(transform.position.x, transform.position.y + _eyePointHeight);
-        _hits = Physics2D.OverlapCircleAll(transform.position, _radius);
     }
     public void Attack()
     {
         throw new System.NotImplementedException();
-    }
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireSphere(_eyePoint, _radius);
     }
 
 }

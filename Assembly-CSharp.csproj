@@ -56,82 +56,103 @@
     <Analyzer Include="Z:\_programs\VS\VS22COM\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Data\Main\Materials\Characters\Hugo\Actions\Scripts\PlayerData\PlayerEntity.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Hugo\Actions\Scripts\PlayerData\PlayerParams.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\Bottleneck\BottleneckUI.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemiesParams\EnemyParams.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Hugo\Actions\Scripts\Attack\PlayerAttack.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemyStates\EnemyDetectState.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
-    <Compile Include="Assets\Data\Scripts\RayCast.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemySpecific\SchoolGuy\States\SchoolGuy_AttackState.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemiesParams\Transitions.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\AliveGO.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\Data\D_Entity.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\ShchoolGuyEmeny\Scripts\AliveGO.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\Data\D_EntityVisibility.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Hugo\Actions\PlayerInput\InputSystem.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\HighLevelLoadManager.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\BanditBoss\Scripts\BanditEnemy.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\State\FiniteStateMachine.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\ShchoolGuyEmeny\Scripts\State\FiniteStateMachine.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemySpecific\SchoolGuy\States\SchoolGuy_EnemyDetectState.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemyStates\PatrolState.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Hugo\Actions\Scripts\Move\IComputable.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\Bottleneck\BeeScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemySpecific\SchoolGuy\States\SchoolGuy_IdleState.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemiesParams\Interfaces\IEnemy1Level.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Debug\StateCheck.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\Data\D_AttackState.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemyStates\AttackState.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\BanditBoss\Scripts\IBandit.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemySpecific\SchoolGuy\States\SchoolGuy_PatrolState.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\ShchoolGuyEmeny\Scripts\State\EnemyEntity.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Data\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemyStates\IdleState.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\Data\D_PatrolState.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\Scaler\ScalerVisualisation.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\SpinLoad.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\State\Entity.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\LoadLevel.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Scripts\AnimationController.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\ShchoolGuyEmeny\Scripts\Transitions.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\Data\D_IdleState.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemiesParams\Enemy1Level.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemySpecific\SchoolGuy\SchoolGuy.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Hugo\Actions\Scripts\AnimationSwitcher.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\State\State.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemyEntityStates\EntityAnimation.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemyEntityStates\EnemyLookAroundEntity.cs" />
     <Compile Include="Assets\Data\Main\Materials\UI\UI Scripts\Debug\CooldownTest.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Hugo\Actions\PlayerInput\InputSystem\InputSystemReader.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\Data\D_EnemyDetectState.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Hugo\Actions\Scripts\Move\PhysicsMovement.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Hugo\Actions\Scripts\Move\SlopeMovement.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
-    <Compile Include="Assets\Data\Scripts\LevelManager\LevelManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
-    <Compile Include="Assets\Data\Main\Materials\Characters\Hugo\Actions\Scripts\Move\PlayerMove.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\AutoPerfControl.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\ClusterInfo\ClusterInfoTest.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\SampleFactory.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Data\Main\Materials\Characters\Hugo\Actions\Scripts\Move\PlayerMoveController.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Hugo\Actions\Scripts\PlayerData\PlayerEntity.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Hugo\Actions\Scripts\PlayerData\PlayerParams.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\ScalerProfiles\ScalerProfileChanger.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\Blockwall\ObjectSpawner.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemyStates\EnemyDetectState.cs" />
+    <Compile Include="Assets\Data\Scripts\RayCast.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemyEntityStates\EnemyIdleEntity.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemyEntityStates\EnemyDetectEntity.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Hugo\Actions\Scripts\Move\IComputable.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Debug\StateCheck.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\Scaler\IndexerVisualisation.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemyStates\AttackState.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemyEntityStates\EnemyPatrolEntity.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\ScalerProfiles\ScalerProfileListItem.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\Boost\BoostUI.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\MidLevelLoadManager.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\AutoPerfUI.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemyStates\IdleState.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\Data\D_PatrolState.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemiesParams\Enemy1Level.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\EnemySpecific\SchoolGuy\StateSelector.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\ShchoolGuyEmeny\Scripts\State\State.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Enemy\Level1Enemy\Data\D_EnemyDetectState.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\ShowFPS.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\Samples\Adaptive Performance\2.2.3\Environment\TestSequence.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+    <Compile Include="Assets\Data\Scripts\LevelManager\LevelManager.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\Data\Main\Materials\Characters\Hugo\Actions\Scripts\Move\PlayerMove.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -772,11 +793,11 @@
     <Reference Include="Unity.AdaptivePerformance.Simulator.Extension">
       <HintPath>Library\ScriptAssemblies\Unity.AdaptivePerformance.Simulator.Extension.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.AdaptivePerformance.Samsung.Android.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AdaptivePerformance.Samsung.Android.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.IK.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
@@ -786,6 +807,9 @@
     </Reference>
     <Reference Include="Unity.Subsystem.Registration">
       <HintPath>Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -847,14 +871,24 @@
     <Reference Include="Unity.2D.Common.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.AdaptivePerformance.Simulator.VRR.Extension">
+      <HintPath>Library\ScriptAssemblies\Unity.AdaptivePerformance.Simulator.VRR.Extension.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AdaptivePerformance.Samsung.Android">
+      <HintPath>Library\ScriptAssemblies\Unity.AdaptivePerformance.Samsung.Android.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="DOTween.Modules.csproj">
       <Project>{C8D02B3D-80DC-806F-41C6-63835B1ADE54}</Project>
       <Name>DOTween.Modules</Name>
+    </ProjectReference>
+    <ProjectReference Include="Settings.csproj">
+      <Project>{859995A9-6480-361A-E6A5-E2C2B594C053}</Project>
+      <Name>Settings</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

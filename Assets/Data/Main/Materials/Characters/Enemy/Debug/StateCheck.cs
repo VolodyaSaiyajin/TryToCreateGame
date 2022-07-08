@@ -13,7 +13,6 @@ public class StateCheck : MonoBehaviour
 
     private void Update()
     {
-
         _textMeshPro.text = _state.CurrentState.ToString();
         Debug.Log(_state.CurrentState); 
     }

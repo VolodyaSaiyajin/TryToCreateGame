@@ -4,16 +4,15 @@ public class AttackState : State
 {
     protected PlayerEntity _playerEntity;
     protected D_AttackState _attackStateData;
-    protected bool _isAttacking;
 
-    public AttackState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_AttackState attackState) : base(entity, stateMachine, animBoolName)
+    public AttackState(EntityAnimation entityAnimation, FiniteStateMachine stateMachine, string animBoolName, D_AttackState attackState)
+        : base(entityAnimation, stateMachine, animBoolName)
     {
         _attackStateData = attackState;
     }
 
     public override void Enter()
-    {       
-        _isAttacking = entity.CheckEnemy();        
+    {           
         base.Enter();
     }
 

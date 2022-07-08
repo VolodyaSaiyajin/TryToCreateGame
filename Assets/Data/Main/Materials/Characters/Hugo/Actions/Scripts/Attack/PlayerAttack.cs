@@ -6,7 +6,6 @@ public class PlayerAttack : MonoBehaviour
     public float AttackDelay => _attackDelay;
     public bool CurrentAttackState => _isAttack;
 
-
     private Rigidbody2D _rb2d;
 
     [Header("Set target and damage")]
@@ -33,8 +32,7 @@ public class PlayerAttack : MonoBehaviour
         TryAttack(_attackDelay);
     }
     private void CheckDistance()
-    {
-        
+    {        
         _hitTargetRight = Physics2D.Raycast(_handPoint.transform.position, _handPoint.transform.right, _maxDistanceToAttack, _layerMask);
         _hitTargetLeft = Physics2D.Raycast(_handPoint.transform.position, -_handPoint.transform.right, _maxDistanceToAttack, _layerMask);
 
