@@ -20,7 +20,6 @@ public class EntityAnimation : EnemyEntity
 
     public virtual void Flip()
     {
-        FacingDirection *= -1;
         AliveGO.transform.Rotate(0f, 180f, 0);
     }
 }

@@ -15,23 +15,4 @@ public class EnemyDetectEntity : EnemyEntity
     {
         base.Start();
     }
-
-    public override void FixedUpdate()
-    {
-        base.FixedUpdate();
-    }
-    public override void Update()
-    {
-        base.Update();
-    }
-    public override void SetVerticalVelocity(float velocity)
-    {
-        base.SetVerticalVelocity(velocity);
-    }
-
-    public virtual void FollowForPlayer()
-    {
-        if (AngleFacingDirection >= AngleRight)
-            _notLooked.Invoke(); //Flip
-    }
 }

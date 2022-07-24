@@ -1,10 +1,10 @@
 
 public class SchoolGuy_PatrolState : PatrolState
 {
-    private readonly StateSelector _enemy;
+    private StateSelector _enemy;
 
     public SchoolGuy_PatrolState(EntityAnimation entityAnimation, FiniteStateMachine stateMachine, string animBoolName,
-        D_PatrolState stateData, StateSelector enemy, EnemyLookAroundEntity enemyLookAround,
+        D_PatrolState stateData, StateSelector enemy, EnemyLookAround enemyLookAround,
         EnemyPatrolEntity enemyPatrol)
         : base(entityAnimation, stateMachine, animBoolName, stateData, enemy, enemyLookAround, enemyPatrol)
     {

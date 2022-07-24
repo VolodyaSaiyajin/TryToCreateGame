@@ -41,11 +41,11 @@ public class BanditEnemy : MonoBehaviour
     public void ApplyDamage(int damage)
     {
         Health -= damage;
-        Debug.Log($"Enemy health: {Health}");
+        Debug.Log($"EnemyDetect health: {Health}");
 
         if (Health <= 0 && gameObject != null)
         {
-            Debug.Log("Enemy is dead");
+            Debug.Log("EnemyDetect is dead");
             Destroy(gameObject);
         }
     }

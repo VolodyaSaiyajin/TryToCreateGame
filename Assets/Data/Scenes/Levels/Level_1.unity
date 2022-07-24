@@ -160,7 +160,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94936130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1419121215}
@@ -179,7 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 220306097}
   m_Layer: 0
-  m_Name: ========Main Hero=======
+  m_Name: ======== Main Hero =======
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -346,11 +346,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1848783015209635881, guid: da1fd22ab7fd0cf40a830cf2f13b1808, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.5437384
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 1848783015209635881, guid: da1fd22ab7fd0cf40a830cf2f13b1808, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1827407
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1848783015209635881, guid: da1fd22ab7fd0cf40a830cf2f13b1808, type: 3}
       propertyPath: m_LocalPosition.z
@@ -387,6 +387,18 @@ PrefabInstance:
     - target: {fileID: 1848783015209635893, guid: da1fd22ab7fd0cf40a830cf2f13b1808, type: 3}
       propertyPath: m_Name
       value: SchoolGuyEnemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5414829253021510956, guid: da1fd22ab7fd0cf40a830cf2f13b1808, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5414829253021510956, guid: da1fd22ab7fd0cf40a830cf2f13b1808, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5414829253021510956, guid: da1fd22ab7fd0cf40a830cf2f13b1808, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da1fd22ab7fd0cf40a830cf2f13b1808, type: 3}
@@ -859,7 +871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1848783015209635881, guid: da1fd22ab7fd0cf40a830cf2f13b1808, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.08
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1848783015209635881, guid: da1fd22ab7fd0cf40a830cf2f13b1808, type: 3}
       propertyPath: m_LocalPosition.z
@@ -896,6 +908,10 @@ PrefabInstance:
     - target: {fileID: 1848783015209635893, guid: da1fd22ab7fd0cf40a830cf2f13b1808, type: 3}
       propertyPath: m_Name
       value: SchoolGuyEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024562998596831070, guid: da1fd22ab7fd0cf40a830cf2f13b1808, type: 3}
+      propertyPath: _debugGizmos
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da1fd22ab7fd0cf40a830cf2f13b1808, type: 3}
@@ -1094,7 +1110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1249498192}
   m_Layer: 0
-  m_Name: ========Enemy=======
+  m_Name: ======== Enemy =======
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1124,7 +1140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1355375452}
   m_Layer: 0
-  m_Name: ======INTERFACE===========
+  m_Name: ======== INTERFACE ========
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23671,11 +23687,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1764271667582850897, guid: 67d3fbd78417d784ea4efb80027ee718, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.12
+      value: -19.92
       objectReference: {fileID: 0}
     - target: {fileID: 1764271667582850897, guid: 67d3fbd78417d784ea4efb80027ee718, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1
+      value: 4.03
       objectReference: {fileID: 0}
     - target: {fileID: 1764271667582850897, guid: 67d3fbd78417d784ea4efb80027ee718, type: 3}
       propertyPath: m_LocalPosition.z

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: SchoolGuyVisibility
   m_EditorClassIdentifier: 
   VisibilityRange: 4
-  AngleOfVisibility: 20
+  AngleOfVisibility: 40
   WallCheckDistance: 0.2
-  LedgeCheckDistance: 0.4
+  LedgeCheckDistance: -0.7
   WhatIsTouched:
     serializedVersion: 2
     m_Bits: 8

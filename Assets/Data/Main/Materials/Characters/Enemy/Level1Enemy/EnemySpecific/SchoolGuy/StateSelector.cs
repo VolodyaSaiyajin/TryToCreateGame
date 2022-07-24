@@ -13,8 +13,6 @@ public class StateSelector : EnemyEntity
     public SchoolGuy_AttackState AttackState { get; private set; }
     public SchoolGuy_EnemyDetectState DetectEnemyState { get; private set; }
 
-    public int Damage { get; private set; }
-
     public StateSelector(D_IdleState idleStateData, D_PatrolState patrolStateData, D_AttackState attackStateData, D_EnemyDetectState enemyDetectState, D_EntityVisibility entityVisibility)
     {
         _idleStateData = idleStateData;
@@ -25,10 +23,9 @@ public class StateSelector : EnemyEntity
 
     }
     
-    public override void Start()
+     public override void Start()
     {
-        base.Start();
-
+        base.Start();  
         IdleState = new SchoolGuy_IdleState(EntityAnimation, StateMachine, "isIdle", _idleStateData, this, EnemyLookAround, EnemyIdle);
         
         PatrolState = new SchoolGuy_PatrolState(EntityAnimation, StateMachine, "isRun", _patrolStateData, this, EnemyLookAround, EnemyPatrol);

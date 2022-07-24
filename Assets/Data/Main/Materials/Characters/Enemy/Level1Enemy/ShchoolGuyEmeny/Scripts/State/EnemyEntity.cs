@@ -2,34 +2,36 @@ using UnityEngine;
 
 public class EnemyEntity : MonoBehaviour
 {
-    protected FiniteStateMachine StateMachine;
-    public int FacingDirection { get; protected set; }
-    public float AngleFacingDirection { get; protected set; }
-    public float DistanceBetweenEnemy { get; protected set; }
+    public FiniteStateMachine StateMachine;
+    
 
     public AliveGO AliveGO { get; protected set; }
     public Animator Anim { get; protected set; }
 
-    protected EnemyLookAroundEntity EnemyLookAround { get; set; }
+    protected EnemyLookAround EnemyLookAround { get; set; }
     protected EnemyPatrolEntity EnemyPatrol { get; set; }
     protected EntityAnimation EntityAnimation { get; set; }
     protected EnemyDetectEntity EnemyDetect { get; set; }
     protected EnemyIdleEntity EnemyIdle { get; set; }
 
     protected Rigidbody2D Rb2d;
-    protected float AngleRight = 90f;
+    
     protected Vector2 VelocityWorkspace;
-
+    
     public virtual void Start()
     {
+        
+
         StateMachine = new FiniteStateMachine();
         AliveGO = GetComponentInParent<AliveGO>();
         Anim = GetComponentInParent<Animator>();
         EntityAnimation = GetComponentInChildren<EntityAnimation>();
         EnemyPatrol = GetComponentInChildren<EnemyPatrolEntity>();
-        EnemyLookAround = GetComponentInChildren<EnemyLookAroundEntity>();
+        EnemyLookAround = GetComponentInChildren<EnemyLookAround>();
         EnemyIdle = GetComponentInChildren<EnemyIdleEntity>();
+        EnemyDetect = GetComponentInChildren<EnemyDetectEntity>();
         Rb2d = GetComponentInParent<Rigidbody2D>();
+        
     }
 
     public virtual void Update()
@@ -48,11 +50,6 @@ public class EnemyEntity : MonoBehaviour
         {
             Debug.Log("Current state not null");
         }
-
         Rb2d.velocity = new Vector3(VelocityWorkspace.x, Rb2d.velocity.y);
-    }
-    public virtual void SetVerticalVelocity(float velocity)
-    {
-        VelocityWorkspace.Set(FacingDirection * velocity, Rb2d.velocity.y * 0);
     }
 }

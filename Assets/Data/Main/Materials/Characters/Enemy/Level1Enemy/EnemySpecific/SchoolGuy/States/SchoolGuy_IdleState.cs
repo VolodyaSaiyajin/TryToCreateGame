@@ -1,12 +1,12 @@
 
 public class SchoolGuy_IdleState : IdleState
 {
-    private StateSelector _enemy;
+    private StateSelector _stateSelector;
 
-    public SchoolGuy_IdleState(EntityAnimation entityAnimation, FiniteStateMachine stateMachine, string animBoolName, D_IdleState idleStateData, StateSelector enemy, EnemyLookAroundEntity enemyLookAround, EnemyIdleEntity enemyIdle)
+    public SchoolGuy_IdleState(EntityAnimation entityAnimation, FiniteStateMachine stateMachine, string animBoolName, D_IdleState idleStateData, StateSelector stateSelector, EnemyLookAround enemyLookAround, EnemyIdleEntity enemyIdle)
         : base(entityAnimation, stateMachine, animBoolName, idleStateData, enemyLookAround, enemyIdle)
     {
-        _enemy = enemy;
+        _stateSelector = stateSelector;
     }
 
     public override void Enter()
@@ -22,14 +22,6 @@ public class SchoolGuy_IdleState : IdleState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-        if (IsIdleTimeOver)
-        {
-            StateMachine.ChangeState(_enemy.PatrolState);
-        }
-        else if (IsDetectEnemy)
-        {
-            StateMachine.ChangeState(_enemy.DetectEnemyState);
-        }
     }
 
     public override void PhysicsUpdate()
